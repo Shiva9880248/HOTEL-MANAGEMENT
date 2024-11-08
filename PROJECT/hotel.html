@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    
+     *,::after,::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     body{
+
+                 margin: 0 100px;     
+                 background-color :rgb(206,168,168);                   
+                background-image: url(../kle/website/Food/kaju.jpg);
+        }
+        .nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+
+        }
+        .nav .logo  h1{
+            font-weight: 600;
+            font-family: sans-serif;
+            color: #000000;
+        }
+        .nav .logo b{
+            color:#ff511c;
+        }
+        .nav ul{
+            display: flex;
+            list-style: none;
+
+        }
+        .nav ul li{
+            margin-right: 30px;
+
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+            font-family: sans-serif;
+            font-size: 17px;
+        }
+        .nav ul .active::after{
+            content: '';
+            width: 50%;
+            height: 3px;
+            background-color: #ff511c;
+            display: flex;
+            position: relative;
+            margin-left: 10px;
+
+        }
+        .nav ul .active::before{
+            content: '';
+            width: 50%;
+            height: 3px;
+            background-color: #ff511c;
+            display: flex;
+            position: relative;
+            margin-left: 10px;
+        }
+        input{
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: 600;
+
+        }
+        .signin{
+            background: transparent;
+            border: none;
+
+        }
+        .signup{
+            background-color: #ff511c;
+            color: #ffff;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .content .content-left{
+            display: block;
+            width: 100%;
+        }
+        .content .content-left .info{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content .content-left .info h2{
+            font-size: 60px;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+        }
+        .content .content-left .info p{
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 2pc;
+            font-family: sans-serif;
+        }
+        .content .content-left button{
+            padding: 10px;
+            background-color: #ff511c;
+            color: #ffff;
+            border-radius: 5px;
+            border: none; 
+            cursor: pointer;
+
+        }
+        .content .content-right{
+            display: block;
+            width: 100%;
+        }
+        img{
+            width: 200px;
+            height: auto;
+            transform: scale(2.3);
+            background: transparent;
+            margin: 0px 20px 0px 120px;
+            
+        } 
+        .category{
+            width: 100%;
+            display: flex;
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+        .category .card-list{
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+
+        }
+         .card1 img{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin: 90px 221px 103px 19px;
+            border-radius: 10px;
+        }
+      
+        .card2 img{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin: 90px 221px 103px 19px;
+            border-radius: 10px;
+        }
+
+        .card3 img{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin: 90px 221px 103px 19px;
+            border-radius: 10px;
+        }
+        .card1 h1{
+            align-content: center;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <section class="menu">
+        <div class="nav">
+            <div class="logo"><h1>Foodie</h1></div>
+            <ul>
+                <li><a class="active" href="#">HOME</a></li>
+            
+                <li><a href="link.html">MENU</a></li>               
+                 <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li> <a href="service.html">Sign-in</a></li>
+            </ul>
+         
+
+        </div>
+    </section>
+    <section class="grid">
+        <div  class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>Order Your Best<br>Food Any Time</h2>
+                    <p>Hey Our Delicious Food Is Wating For You, <br>
+                     We Are Always Near To You With Fresh Item Of Food
+                    </p>
+                </div>
+                <button>Explore Food</button>             
+                </div>
+                <div class="content-right">
+                </div>
+                
+
+                </section>
+                <section class="category">
+                    <div class="card1">
+                        <img src="https://m.media-amazon.com/images/I/318fofZmBYL.jpg" alt="">                                   
+                          
+                    <h1><a href="veg.html">VEG</a></h1>
+                </div>
+                <div class="card2">
+                    
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMLfraBCscqg65z1lbsJ7QrdtJCGzNlv7_Q&s" alt="">
+                        <h1><a href="non-veg.html">NON-VEG</a></h1>
+                    </div>
+                    
+                    
+                
+                <div class="card3">
+                    <img src="https://www.cannonlogistics.com.au/wp-content/uploads/2015/11/soft-drink-cans.jpg" alt="">
+                    <h1><a href="drinks.html">DRINKS</a></h1>
+                </div>
+                </div>
+                    </div>
+    </section>
+</body>
+</html>
